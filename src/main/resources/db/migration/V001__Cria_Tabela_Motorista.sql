@@ -1,0 +1,13 @@
+CREATE TABLE motorista (
+  id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+  nome VARCHAR (255) NOT NULL,
+ cpf VARCHAR(11) NOT NULL,
+ rg VARCHAR(10) NOT NULL,
+ nascimento DATE NOT NULL,
+ telefone VARCHAR(20),
+ endereco VARCHAR (255),
+ cidade VARCHAR (255),
+ categoria INT NOT NULL,
+ obs VARCHAR(255),
+ disponivel BIT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
