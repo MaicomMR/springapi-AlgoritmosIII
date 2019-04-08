@@ -5,14 +5,16 @@ import lombok.Data;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.util.Date;
+import java.util.List;
 
 
 @Entity(name = "motorista")
 public @Data class Motorista {
 
         //TODO: Criar relacionamento das tabelas
-        //@ManyToMany(targetEntity = Viagem.class)
-        //private List<Viagem> viagem;
+
+        @ManyToMany(targetEntity = Viagem.class)
+        private List<Viagem> viagem;
 
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
