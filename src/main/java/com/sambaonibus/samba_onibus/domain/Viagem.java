@@ -12,7 +12,6 @@ import java.util.Date;
 public @Data
 class Viagem {
 
-
     //TODO: Criar relacionamento das tabelas
     //TODO: Criar um COUNT nos passageiros para calcular o número de passageiros da viagem.
 
